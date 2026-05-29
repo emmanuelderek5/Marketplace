@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Product Details</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+  <div class="product-details">
+
+   <!-- <img
+      id="productImage"
+      class="details-image"
+      alt=""
+    >-->
+
+  <div class="carousel">
+
+  <button id="prevBtn" class="carousel-btn">‹</button>
+
+  <img id="productImage" class="details-image" alt="">
+
+  <button id="nextBtn" class="carousel-btn">›</button>
+</div>
+
+<div id="dotsContainer" class="dots"></div>
+
+
+    <div class="details-info">
+
+      <h1 id="productTitle"></h1>
+
+      <p
+        id="productPrice"
+        class="price"
+      ></p>
+
+      <p
+        id="productDescription"
+      ></p>
+
+      <button class="contact-btn">
+        Contact Vendor
+      </button>
+
+      <br><br>
+
+      <a href="index.html">
+        ← Back to Marketplace
+      </a>
+
+    </div>
+
+  </div>
+
+<!-- IMAGE LIGHTBOX -->
+<div id="imageOverlay" class="image-overlay">
+  <img id="expandedImage" class="expanded-image">
+</div>
+
+<a href="index.html" class="back-home-btn">← Home</a>
+
+
+<!-- Vendor Popup -->
+<div id="vendorOverlay" class="vendor-overlay">
+
+  <div class="vendor-box">
+
+    <span id="closeVendor" class="close-vendor">&times;</span>
+
+    <h2 id="vendorName"></h2>
+
+    <p id="vendorAddress"></p>
+
+    <p id="vendorPhone"></p>
+
+    <p id="vendorEmail"></p>
+
+    <p id="vendorWebsite"></p>
+
+  </div>
+
+</div>
+
+
+<!-- Loading Spinner Overlay -->
+<div id="loadingOverlay" class="loading-overlay">
+
+  <div class="spinner"></div>
+
+</div>
+
+
+ <script src="products.js"></script>
+  <script src="product.js"></script>
+
+</body>
+
+</html>

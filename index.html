@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Marketplace App</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+<img src="assets/images/trusted.png" id="trustedBadge" alt="Trusted Badge">
+
+<!-- Trusted Badge Modal -->
+<div id="trustedOverlay" class="trusted-overlay">
+  <div class="trusted-box">
+    <span id="trustedClose" class="trusted-close">&times;</span>
+    <h2>Trusted Marketplace</h2>
+    <p>
+      This platform is built to promote safe buying and selling.
+      Always verify sellers before transactions.
+    </p>
+  </div>
+</div>
+
+  <header class="header">
+
+    <h1>Thrift Store Marketplace</h1>
+    <p class="subtitle">Buy and sell items safely and easily</p>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search products..."
+    >
+
+  </header>
+
+  <main>
+
+    <div
+      id="productsContainer"
+      class="products-grid"
+    ></div>
+
+  </main>
+
+
+
+<!-- Crystal Info Button -->
+<button id="infoBtn" class="crystal-btn">
+  ✨ Info
+</button>
+
+<!-- Popup Overlay -->
+<div id="popupOverlay" class="popup-overlay">
+
+  <!-- Popup Box -->
+  <div class="popup-box">
+
+    <!-- Close Button -->
+    <span id="closePopup" class="close-popup">&times;</span>
+
+    <!-- Your Content -->
+    <div class="popup-content">
+      <h2>Information</h2>
+
+      <p>
+        Please Email your request, information and photos to:
+      </p>
+
+      <p><i>
+        analyticalhealthservices@gmail.com
+      </p></i>
+
+    </div>
+
+  </div>
+
+</div>
+
+<button id="backToTopBtn">↑ Top</button>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
