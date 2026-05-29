@@ -910,3 +910,27 @@ transition:
   }
 
 }
+
+
+
+
+/* Mobile Fix for Trusted Badge */
+
+@media (max-width: 768px) {
+
+  #trustedBadge {
+    width: 60px;       /* make smaller */
+    height: auto;
+    top: 10px;
+    left: 10px;
+    z-index: 1;        /* move behind text */
+    opacity: 0.85;     /* optional softer look */
+  }
+
+  .header h1,
+  .subtitle {
+    position: relative;
+    z-index: 2;        /* keep text above badge */
+  }
+
+}
