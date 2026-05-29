@@ -911,26 +911,30 @@ transition:
 
 }
 
-
-
-
 /* Mobile Fix for Trusted Badge */
 
 @media (max-width: 768px) {
 
-  #trustedBadge {
-    width: 60px;       /* make smaller */
+  .header{
+    position: relative;
+    padding-top: 70px;
+  }
+
+  #trustedBadge{
+    width: 55px;
     height: auto;
-    top: 10px;
-    left: 10px;
-    z-index: 1;        /* move behind text */
-    opacity: 0.85;     /* optional softer look */
+
+    top: 8px;
+    left: 8px;
+
+    z-index: 1;
+    opacity: 0.75;
   }
 
   .header h1,
-  .subtitle {
+  .subtitle{
     position: relative;
-    z-index: 2;        /* keep text above badge */
+    z-index: 2;
   }
 
 }
